@@ -1,0 +1,27 @@
+{
+    "name": "storefront_ts",
+    "version": "0.0.1",
+    "private": true,
+    "description": "",
+    "main": "server_test.js",
+    "type": "module",
+    "scripts": {
+        "start": "node server_test.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@shopify/shopify-api": "^6.1.0",
+        "allow-methods": "^5.0.0",
+        "cors": "^2.8.5",
+        "crypto": "^1.0.1",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "fs": "^0.0.1-security",
+        "https": "^1.0.0",
+        "mysql2": "^3.0.1",
+        "node-fetch": "^3.3.0",
+        "shopify-buy": "^2.17.1",
+        "timers": "^0.1.1"
+    }
+}
