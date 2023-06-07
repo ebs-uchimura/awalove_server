@@ -6,9 +6,11 @@
 
 "use strict";
 
+dotenv.config();
+
 // 定数
-const SERVERNAME = "shopifyServer"; // サーバ名
-const DEFAULT_PORT = 3000; // ポート
+const SERVERNAME = process.env.SERVERNAME; // サーバ名
+const DEFAULT_PORT = process.env.PORT; // ポート
 const SHIPPING_FEE = 550; // 送料
 
 // モジュール
@@ -20,8 +22,6 @@ import cors from "cors"; // cors
 import Crypto from "crypto"; // 暗号化
 import * as dotenv from "dotenv"; // 環境変数用
 import SQL from "./class/sql.js"; // sql
-dotenv.config();
-
 import scenarioData from "./scenario.mjs"; // シナリオ読み込み
 
 // db
