@@ -1,0 +1,204 @@
+/*
+/* company.css
+*/
+
+@charset "utf-8";
+
+/* -----------------------------------------------------------------
+   reset
+----------------------------------------------------------------- */
+/* general*/
+main {
+  width: 996px;
+  margin: 100px 0;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+main {
+  margin: auto;
+}
+
+main p {
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.batsu {
+  padding-top: 10vw;
+}
+
+.menuarea .menu-base .menu-text {
+  height: 40vh;
+  z-index: 9999;
+}
+
+.mission {
+  padding-top: 80px;
+}
+
+.header-catch {
+  display: none;
+}
+
+.mission {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission .text {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.mission .company-img {
+  text-align: center;
+}
+
+/* company area */
+.company-text {
+  display: flex;
+  margin: 30px 0;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.company-text:last-child {
+  margin-bottom: 0;
+}
+
+.company-text div {
+  width: 100%;
+}
+
+/* inside area */
+ul.flexarea {
+  width: 100%;
+  margin-top: 10px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+ul.flexarea li ul {
+  height: 100%;
+  display: flex;
+}
+
+ul.flexarea li ul li {
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  text-align: left;
+  padding: 10px;
+}
+
+ul.flexarea li ul li:last-child {
+  border-right: none;
+}
+
+ul.flexarea li ul li.li01 {
+  width: 30%;
+  color: #fff;
+  background-color: #c1342a;
+}
+
+ul.flexarea li ul li ul {
+  display: flex;
+  flex-direction: column;
+}
+
+ul.flexarea li ul li ul li {
+  padding: 0;
+  border: none;
+}
+
+.history-area {
+  margin: 0 0 0 2%;
+}
+
+@media screen and (max-width: 640px) {
+  main {
+    width: 100vw;
+    margin: 5vw auto 0 auto;
+  }
+
+  main h1 {
+    margin-left: 2vw;
+  }
+
+  .menuarea .menu-base .menu-text {
+    height: 40vh;
+  }
+
+  .header-wrapper {
+    height: 0;
+  }
+
+  ul.content ul {
+    flex-wrap: wrap;
+  }
+
+  ul.content ul .li04,
+  ul.content ul .li03,
+  ul.content ul .li01 {
+    border-right: none;
+  }
+
+  ul.content ul .li04,
+  ul.content ul .li01 {
+    width: 100%;
+  }
+
+  .mission {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission .text {
+    margin: 0 20px;
+    text-align: left;
+  }
+
+  .mission .company-image {
+    margin: 2vw 0
+  }
+
+  .company-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  .company-text:last-child {
+    margin-bottom: 0;
+  }
+
+  .company-text div {
+    width: 100vw;
+  }
+
+  .history-area {
+    margin: 5vw 0;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,248 @@
+/*
+/* option.css 
+*/
+
+@charset "utf-8";
+
+/* default value */
+:root {
+  --this-site-thin: 300;
+  --narrow-line-height: 1.5em;
+  --default-line-height: 1.8em;
+  --verynarrow-letter-spacing: 0.05em;
+}
+
+/* font setting */
+@import 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap';
+
+/* general */
+body {
+  margin: 0;
+  font-family: 'Roboto', "Noto Sans JP", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", sans-serif;
+}
+
+h2 {
+  font-weight: var(--this-site-thin);
+  letter-spacing: var(--verynarrow-letter-spacing);
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: var(--this-site-thin);
+  line-height: var(--narrow-line-height);
+  letter-spacing: var(--verynarrow-letter-spacing);
+}
+
+p {
+  text-align: left;
+  word-wrap: break-word;
+  font-weight: var(--this-site-thin);
+  line-height: var(--default-line-height);
+  letter-spacing: var(--verynarrow-letter-spacing);
+}
+
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-align: left;
+  word-wrap: break-word;
+  line-height: var(--default-line-height);
+  letter-spacing: var(--verynarrow-letter-spacing);
+  list-style: none;
+  text-decoration: none;
+}
+
+dt {
+  margin-top: 10vw;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+p {
+  display: block;
+  text-align: justify;
+  font-weight: var(--this-site-thin);
+  font-feature-settings: "palt";
+  line-height: var(--default-line-height);
+  letter-spacing: var(--verynarrow-letter-spacing);
+}
+
+*::placeholder {
+  font-size: 1rem;
+  font-family: 'Roboto', "Noto Sans JP", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", sans-serif;
+}
+
+fieldset {
+  border: none;
+}
+
+.error {
+  color: red;
+}
+
+.header-catch {
+  display: none;
+}
+
+.batsu {
+  padding-top: 10vw;
+}
+
+#adsearch {
+  margin-top: 5px;
+}
+
+/* for SP */
+@media (max-width: 428px) {
+
+  /* general */
+  h2 {
+    font-size: 5vw;
+  }
+
+  h4 {
+    font-size: 4vw;
+  }
+
+  p,
+  li,
+  dl,
+  dd,
+  dt {
+    font-size: 3.5vw;
+  }
+
+  .header-wrapper {
+    height: 10vw;
+  }
+
+  .menuarea .menu-base .menu-text {
+    height: 40vh;
+  }
+
+  /* commercial */
+  .commercial {
+    width: 100vw;
+    margin-bottom: 10vw;
+  }
+
+  .commercial .commercial-base {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .commercial .commercial-base h2 {
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .commercial .commercial-base h4 {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .commercial .commercial-base p {
+    margin-top: 30px;
+    text-align: left;
+  }
+
+  /* privacy policy */
+  .privacy {
+    width: 100vw;
+    margin-bottom: 10vw;
+  }
+
+  .privacy .privacy-base {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .privacy .privacy-base h2 {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* label */
+  .labelarea {
+    text-align: center;
+  }
+
+  input[type=radio]+label:before {
+    width: 85vw;
+    height: calc(85vw * 0.8);
+    content: "";
+    display: inline-block;
+    background-size: contain;
+  }
+
+}
+
+/* for PC */
+@media (min-width: 429px) {
+
+  /* general */
+  dl {
+    margin: 0;
+    padding: 0;
+  }
+
+  dd {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+  }
+
+  dt {
+    margin-top: 3vw;
+    font-size: 1.1rem;
+  }
+
+  .menuarea .menu-base .menu-text {
+    z-index: 9999;
+  }
+
+  /* commercial */
+  .commercial {
+    width: 100%;
+    margin: 120px 0;
+  }
+
+  .commercial .commercial-base {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .commercial .commercial-base h2 {
+    margin: 40px 0;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* privacy policy */
+  .privacy {
+    width: 100%;
+    margin: 120px 0;
+  }
+
+  .privacy .privacy-base {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .privacy .privacy-base h2 {
+    margin: 40px 0;
+    font-weight: bold;
+    text-align: center;
+  }
+}

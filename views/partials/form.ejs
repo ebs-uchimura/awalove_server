@@ -1,0 +1,230 @@
+<section id="order" class="order">
+  <div class="order-base">
+    <h2>LINEを使って<br>お気軽に体験!</h2>
+    <div class="order-header">質問に答えるだけですぐ注文できます</div>
+    <form id="orderform" class="h-adr" method="post" action="/form">
+      <fieldset class="labelfield">
+        <legend class="formhead">まずはデザインを選びましょう！</legend>
+        <div class="labelarea">
+          <img class="genre standard-label" src="/img/labelbutton001.png">
+          <div id="standard" class="standard">
+            <p>「NAME」と表示された部分にご希望の文字が入ります。</p>
+            <div id="label1">
+              <input type="radio" name="imgSelect" value="standard0001" id="standard0001" required="required">
+              <label for="standard0001"><br>standard 1</label>
+            </div>
+            <div id="label2">
+              <input type="radio" name="imgSelect" value="standard0002" id="standard0002">
+              <label for="standard0002"><br>standard 2</label>
+            </div>
+            <div id="label3">
+              <input type="radio" name="imgSelect" value="standard0003" id="standard0003">
+              <label for="standard0003"><br>standard 3</label>
+            </div>
+            <div id="label4">
+              <input type="radio" name="imgSelect" value="standard0004" id="standard0004">
+              <label for="standard0004"><br>standard 4</label>
+            </div>
+          </div>
+
+          <img class="genre pop-label" src="/img/labelbutton002.png">
+          <div id="pop" class="pop">
+            <p>「NAME」と表示された部分にご希望の文字が入ります。</p>
+            <div id="label1">
+              <input type="radio" name="imgSelect" value="pop0001" id="pop0001">
+              <label for="pop0001"><br>pop 1</label>
+            </div>
+            <div id="label2">
+              <input type="radio" name="imgSelect" value="pop0002" id="pop0002">
+              <label for="pop0002"><br>pop 2</label>
+            </div>
+            <div id="label3">
+              <input type="radio" name="imgSelect" value="pop0003" id="pop0003">
+              <label for="pop0003"><br>pop 3</label>
+            </div>
+            <div id="label4">
+              <input type="radio" name="imgSelect" value="pop0004" id="pop0004">
+              <label for="pop0004"><br>pop 4</label>
+            </div>
+          </div>
+
+          <img class="genre luxury-label" src="/img/labelbutton003.png">
+          <div id="luxury" class="luxury">
+            <p>「NAME」と表示された部分にご希望の文字が入ります。</p>
+            <div id="label1">
+              <input type="radio" name="imgSelect" value="luxury0001" id="luxury0001">
+              <label for="luxury0001"><br>luxury 1</label>
+            </div>
+            <div id="label2">
+              <input type="radio" name="imgSelect" value="luxury0002" id="luxury0002">
+              <label for="luxury0002"><br>luxury 2</label>
+            </div>
+            <div id="label3">
+              <input type="radio" name="imgSelect" value="luxury0003" id="luxury0003">
+              <label for="luxury0003"><br>luxury 3</label>
+            </div>
+            <div id="label4">
+              <input type="radio" name="imgSelect" value="luxury0004" id="luxury0004">
+              <label for="luxury0004"><br>luxury 4</label>
+            </div>
+          </div>
+
+          <img class="genre cool-label" src="/img/labelbutton004.png">
+          <div id="cool" class="cool">
+            <p>「NAME」と表示された部分にご希望の文字が入ります。</p>
+            <div id="label1">
+              <input type="radio" name="imgSelect" value="cool0001" id="cool0001">
+              <label for="cool0001"><br>cool 1</label>
+            </div>
+            <div id="label2">
+              <input type="radio" name="imgSelect" value="cool0002" id="cool0002">
+              <label for="cool0002"><br>cool 2</label>
+            </div>
+            <div id="label3">
+              <input type="radio" name="imgSelect" value="cool0003" id="cool0003">
+              <label for="cool0003"><br>cool 3</label>
+            </div>
+            <div id="label4">
+              <input type="radio" name="imgSelect" value="cool0004" id="cool0004">
+              <label for="cool0004"><br>cool 4</label>
+            </div>
+          </div>
+
+          <img class="genre natural-label" src="/img/labelbutton005.png">
+          <div id="natural" class="natural">
+            <p>「NAME」と表示された部分にご希望の文字が入ります。</p>
+            <div id="label1">
+              <input type="radio" name="imgSelect" value="natural0001" id="natural0001">
+              <label for="natural0001"><br>natural 1</label>
+            </div>
+            <div id="label2">
+              <input type="radio" name="imgSelect" value="natural0002" id="natural0002">
+              <label for="natural0002"><br>natural 2</label>
+            </div>
+            <div id="label3">
+              <input type="radio" name="imgSelect" value="natural0003" id="natural0003">
+              <label for="natural0003"><br>natural 3</label>
+            </div>
+            <div id="label4">
+              <input type="radio" name="imgSelect" value="natural0004" id="natural0004">
+              <label for="natural0004"><br>natural 4</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="labeldesign centerul">
+          <div class="chkbox">
+            <input type="checkbox" id="original" name="original">
+            <label for="original">オリジナルデザインで作りたい<br>（専属の担当がご要望をお聞きします）</label>
+          </div>
+        </div>
+
+        <legend class="labeltext">●&nbsp;ラベルに入れたい文字</legend>
+        <div class="mytext">
+          <input type="text" name="labeltext" id="labeltext" class="default" value="" placeholder="希望する文字を入れてください">
+          <div class="chkbox">
+            <input type="checkbox" id="uselogo" name="uselogo">
+            <label for="uselogo">お店のロゴを使いたい（担当より詳細をお聞きします）</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="sendaddress">
+        <legend>●&nbsp;オリジナルボトルのお届け先</legend>
+        <div class="add-item shop">
+          <div class="shopname">店名</div>
+          <input type="text" name="shopname" id="shopname" class="wide" value="" placeholder="お届け先の店名を入れてください"
+            required="required" title="Please enter your name">
+        </div>
+        <div class="add-item telephone">
+          <div class="tel">店舗の電話番号（携帯／固定電話）</div>
+          <input type="text" name="tel" id="tel" class="wide" value="" placeholder="ご連絡できる電話番号を入れてください"
+            required="required">
+        </div>
+        <div class="add-item mailaddress">
+          <div class="email">E-mail</div>
+          <input type="text" name="email" id="email" class="wide" value="" placeholder="メールアドレス" required="required">
+        </div>
+        <div class="add-item addresszip">
+          <span class="p-country-name" style="display:none;">Japan</span>
+          <label>
+            <div>郵便番号</div>
+            <input type="text" name="zip" id="zip" class="p-postal-code" size="8" maxlength="8" required="required">
+          </label>
+          <label>
+            <div>都道府県</div>
+            <select name="pref" id="pref" class="p-region-id" required>
+              <option value="" hidden>--</option>
+              <option value="1">北海道</option>
+              <option value="2">青森県</option>
+              <option value="3">岩手県</option>
+              <option value="4">宮城県</option>
+              <option value="5">秋田県</option>
+              <option value="6">山形県</option>
+              <option value="7">福島県</option>
+              <option value="8">茨城県</option>
+              <option value="9">栃木県</option>
+              <option value="10">群馬県</option>
+              <option value="11">埼玉県</option>
+              <option value="12">千葉県</option>
+              <option value="13">東京都</option>
+              <option value="14">神奈川県</option>
+              <option value="15">新潟県</option>
+              <option value="16">富山県</option>
+              <option value="17">石川県</option>
+              <option value="18">福井県</option>
+              <option value="19">山梨県</option>
+              <option value="20">長野県</option>
+              <option value="21">岐阜県</option>
+              <option value="22">静岡県</option>
+              <option value="23">愛知県</option>
+              <option value="24">三重県</option>
+              <option value="25">滋賀県</option>
+              <option value="26">京都府</option>
+              <option value="27">大阪府</option>
+              <option value="28">兵庫県</option>
+              <option value="29">奈良県</option>
+              <option value="30">和歌山県</option>
+              <option value="31">鳥取県</option>
+              <option value="32">島根県</option>
+              <option value="33">岡山県</option>
+              <option value="34">広島県</option>
+              <option value="35">山口県</option>
+              <option value="36">徳島県</option>
+              <option value="37">香川県</option>
+              <option value="38">愛媛県</option>
+              <option value="39">高知県</option>
+              <option value="40">福岡県</option>
+              <option value="41">佐賀県</option>
+              <option value="42">長崎県</option>
+              <option value="43">熊本県</option>
+              <option value="44">大分県</option>
+              <option value="45">宮崎県</option>
+              <option value="46">鹿児島県</option>
+              <option value="47">沖縄県</option>
+            </select><br>
+          </label>
+          <label>
+            <div>市町村区(例:品川区)</div>
+            <input type="text" name="city" id="city" class="p-locality" required="required"><br>
+          </label>
+          <label>
+            <div>番地以降(例:東大井1-1)</div>
+            <input type="text" name="street" id="street" class="p-street-address" required="required"><br>
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="submit">
+        <input type="image" id="submit" src="/img/order_button.png" alt="注文する">
+      </div>
+    </form>
+
+    <div class="caption">
+      <ul>
+        <li>※LINEを使っての注文となります</li>
+        <li>※デザインの確認は専属の担当がLINEでご連絡いたします。</li>
+      </ul>
+    </div>
+  </div>
+</section>

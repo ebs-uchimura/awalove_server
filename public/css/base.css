@@ -1,0 +1,278 @@
+/*
+/* base.css
+*/
+
+@charset "utf-8";
+
+body {
+    text-align: center;
+    width: 700px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 1.7rem;
+    color: #fff;
+    margin: 30px 0 0 0;
+    padding-top: 15px;
+    background-color: #ea5514;
+}
+
+h2 {
+    margin: 30px 0 0 0;
+    color: #ea5514;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.wrapper {
+    border: 5px solid #ea5514;
+}
+
+.inputwrapper {
+    height: 80px;
+    margin: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #231815;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.inputwrapper .title {
+    width: 150px;
+    text-align: left;
+    padding: 0 10px;
+    border-right: 2px solid #231815;
+}
+
+.inputwrapper .body {
+    width: 600px;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.pubwrapper {
+    height: 60px;
+    margin: 10px 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid #231815;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.pubwrapper div {
+    padding: 0 10px;
+}
+
+.pubwrapper input {
+    width: 400px;
+    height: 40px;
+}
+
+.accwrapper {
+    margin-bottom: 20px;
+}
+
+.accwrapper input {
+    width: 400px;
+    height: 40px;
+}
+
+.namearea,
+.idarea,
+.passarea {
+    color: #ea5514;
+    font-weight: bolder;
+}
+
+.logwrapper {
+    margin-bottom: 20px;
+}
+
+.logwrapper input {
+    width: 400px;
+    height: 40px;
+}
+
+.loginidarea,
+.loginpassarea {
+    color: #ea5514;
+    font-weight: bolder;
+}
+
+.urlbox {
+    width: 480px;
+    height: 40px;
+}
+
+.line {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #ea5514;
+}
+
+.attention {
+    font-size: 0.9rem;
+}
+
+.tokusho {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bolder;
+    background-color: #ea5514;
+}
+
+.error {
+    padding-left: 5px;
+    font-size: 0.9rem;
+    color: red;
+}
+
+.button {
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    color: black;
+    background-color: rgb(225, 224, 224);
+    border-width: 1px;
+    border-color: darkgray;
+    text-decoration: none;
+}
+
+#btnClear {
+    margin-bottom: 20px;
+}
+
+/* blue buttons */
+.button-g {
+    width: auto;
+    margin-left: 10px;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+
+}
+
+.button-g:hover,
+.button-g:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.button-g:hover {
+    transform: translateY(-1px);
+}
+
+.button-g:active {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+.button-wide {
+    width: 250px;
+}
+
+/* red buttons */
+.button-8 {
+    background-color: #FFB2B2;
+}
+
+.button-8:active {
+    background-color: #FFA5A5;
+}
+
+/* general buttons */
+.button-6 {
+    background-color: #FFFFFF;
+}
+
+.button-6:active {
+    background-color: #F0F0F1;
+}
+
+/* general buttons */
+.button-4 {
+    background-color: #CCE6FF;
+}
+
+.button-4:active {
+    background-color: #B3D9FF;
+}
+
+/* SP用 */
+@media (max-width: 428px) {
+
+    body {
+        width: 100%;
+    }
+
+    h1 {
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .button {
+        width: 80%;
+        height: 50px;
+    }
+
+    .inputwrapper {
+        height: 80px;
+        margin: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid #231815;
+        border-radius: 10px;
+        font-weight: bolder;
+    }
+
+    .inputwrapper .title {
+        width: 30%;
+    }
+
+    .inputwrapper .body {
+        width: 70%;
+    }
+
+    .button-wide {
+        width: 80%;
+    }
+}
